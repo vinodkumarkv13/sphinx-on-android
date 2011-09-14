@@ -1,0 +1,24 @@
+/*
+ * gqandroidrecordsl.cpp
+ *
+ *  Created on: 2011-9-8
+ *      Author: root
+ */
+
+#include "../include/gqandroidrecordsl.h"
+
+GqAndroidRecordSL::GqAndroidRecordSL() {
+	// TODO Auto-generated constructor stub
+
+}
+
+GqAndroidRecordSL::~GqAndroidRecordSL() {
+	// TODO Auto-generated destructor stub
+}
+
+void GqAndroidRecordSL::received_buf_from_recorder()
+{
+}
+
+
+

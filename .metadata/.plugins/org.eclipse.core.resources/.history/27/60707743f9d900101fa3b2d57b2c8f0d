@@ -1,0 +1,38 @@
+/*
+ * gqandroidrecordsl.cpp
+ *
+ *  Created on: 2011-9-8
+ *      Author: root
+ */
+
+#include "../include/gqandroidrecordsl.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <iostream>
+#include <iomanip>
+
+GqAndroidRecordSL::GqAndroidRecordSL() {
+
+}
+
+GqAndroidRecordSL::~GqAndroidRecordSL() {
+}
+
+void GqAndroidRecordSL::received_buf_from_recorder(short *record_buf,
+		unsigned long buf_size_in_byte) {
+	for (unsigned long i = 0; i < buf_size_in_byte; ++i) {
+		std::cout << std::right << std::setw(sizeof(char) * 2) << std::hex
+				<< record_buf[i] << std::setfill('0');
+		if (i % 10 == 0) {
+			std::cout << std::endl;
+		} else if (i % 10 > 0) {
+			std::cout << ",";
+		}
+	}
+
+	delete record_buf;
+	record_buf = NULL;
+}
+

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;testndk&apos;" deleteContents="true" description="Delete resource &apos;testndk&apos;" element1="/testndk" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1315278615271"/>&#x0A;<refactoring comment="Delete resource &apos;android_exe/src/gqrecord.cpp&apos;" deleteContents="false" description="Delete resource &apos;android_exe/src/gqrecord.cpp&apos;" element1="/android_exe/src/gqrecord.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1315466718106"/>
+</session>

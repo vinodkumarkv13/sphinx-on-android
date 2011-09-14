@@ -1,0 +1,17 @@
+/*
+ * igqsphinx.h
+ *
+ *  Created on: 2011-9-13
+ *      Author: root
+ */
+
+#ifndef IGQSPHINX_H_
+#define IGQSPHINX_H_
+
+class IGqSphinx {
+public:
+	IGqSphinx();
+	virtual ~IGqSphinx();
+};
+
+#endif /* IGQSPHINX_H_ */

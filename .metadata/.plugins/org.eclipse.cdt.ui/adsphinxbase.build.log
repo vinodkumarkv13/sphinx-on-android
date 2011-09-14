@@ -1,0 +1,24 @@
+
+**** Build of configuration Debug for project adsphinxbase ****
+
+make all 
+Building file: ../src/libsphinxbase/lm/ngram_model_dmp.c
+Invoking: Cross GCC Compiler
+arm-linux-androideabi-gcc -nostdinc -I/home/q/Workspace/my_test/adsphinxbase/include/ -I/home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include -I/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/include -I/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/arm-linux-androideabi/include -I/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/lib/gcc/arm-linux-androideabi/4.4.3/include -I/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/lib/gcc/arm-linux-androideabi/4.4.3/include-fixed/ -I/home/q/Workspace/Andriod/NDK/sources/cxx-stl/stlport/stlport/ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/libsphinxbase/lm/ngram_model_dmp.d" -MT"src/libsphinxbase/lm/ngram_model_dmp.d" -o "src/libsphinxbase/lm/ngram_model_dmp.o" "../src/libsphinxbase/lm/ngram_model_dmp.c"
+In file included from /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdlib.h:37,
+                 from ../src/libsphinxbase/lm/ngram_model_dmp.c:46:
+Finished building: ../src/libsphinxbase/lm/ngram_model_dmp.c
+/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h:411:1: warning: "offsetof" redefined
+ 
+Building target: libadsphinxbase.so
+In file included from /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/posix_types.h:15,
+Invoking: Cross G++ Linker
+                 from /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/types.h:37,
+arm-linux-androideabi-g++ -nostdlib -L/home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/lib/ -Wl,-no-undefined -shared -o "libadsphinxbase.so"  ./src/libsphinxbase/util/bio.o ./src/libsphinxbase/util/bitvec.o ./src/libsphinxbase/util/blas_lite.o ./src/libsphinxbase/util/case.o ./src/libsphinxbase/util/ckd_alloc.o ./src/libsphinxbase/util/cmd_ln.o ./src/libsphinxbase/util/dtoa.o ./src/libsphinxbase/util/err.o ./src/libsphinxbase/util/errno.o ./src/libsphinxbase/util/f2c_lite.o ./src/libsphinxbase/util/filename.o ./src/libsphinxbase/util/genrand.o ./src/libsphinxbase/util/glist.o ./src/libsphinxbase/util/hash_table.o ./src/libsphinxbase/util/heap.o ./src/libsphinxbase/util/huff_code.o ./src/libsphinxbase/util/info.o ./src/libsphinxbase/util/listelem_alloc.o ./src/libsphinxbase/util/logmath.o ./src/libsphinxbase/util/matrix.o ./src/libsphinxbase/util/mmio.o ./src/libsphinxbase/util/pio.o ./src/libsphinxbase/util/profile.o ./src/libsphinxbase/util/sbthread.o ./src/libsphinxbase/util/slamch.o ./src/libsphinxbase/util/slapack_lite.o ./src/libsphinxbase/util/strfuncs.o ./src/libsphinxbase/util/string_wce.o ./src/libsphinxbase/util/unlimit.o ./src/libsphinxbase/util/utf8.o  ./src/libsphinxbase/lm/fsg_model.o ./src/libsphinxbase/lm/jsgf.o ./src/libsphinxbase/lm/jsgf_parser.o ./src/libsphinxbase/lm/jsgf_scanner.o ./src/libsphinxbase/lm/lm3g_model.o ./src/libsphinxbase/lm/ngram_model.o ./src/libsphinxbase/lm/ngram_model_arpa.o ./src/libsphinxbase/lm/ngram_model_dmp.o ./src/libsphinxbase/lm/ngram_model_dmp32.o ./src/libsphinxbase/lm/ngram_model_set.o  ./src/libsphinxbase/feat/agc.o ./src/libsphinxbase/feat/cmn.o ./src/libsphinxbase/feat/cmn_prior.o ./src/libsphinxbase/feat/feat.o ./src/libsphinxbase/feat/lda.o  ./src/libsphinxbase/fe/fe_interface.o ./src/libsphinxbase/fe/fe_sigproc.o ./src/libsphinxbase/fe/fe_warp.o ./src/libsphinxbase/fe/fe_warp_affine.o ./src/libsphinxbase/fe/fe_warp_inverse_linear.o ./src/libsphinxbase/fe/fe_warp_piecewise_linear.o ./src/libsphinxbase/fe/fixlog.o   -lc -lm -lstdc++
+                 from /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdio.h:55,
+Finished building target: libadsphinxbase.so
+                 from ../src/libsphinxbase/lm/ngram_model_dmp.c:44:
+ 
+/home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/stddef.h:28:1: warning: this is the location of the previous definition
+
+**** Build Finished ****

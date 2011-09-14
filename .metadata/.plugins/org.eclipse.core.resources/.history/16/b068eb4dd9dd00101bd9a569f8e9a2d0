@@ -1,0 +1,18 @@
+/*
+ * igqsphinx.cpp
+ *
+ *  Created on: 2011-9-13
+ *      Author: root
+ */
+
+#include "../include/igqsphinx.h"
+
+IGqSphinx::IGqSphinx() {
+	// TODO Auto-generated constructor stub
+
+}
+
+IGqSphinx::~IGqSphinx() {
+	// TODO Auto-generated destructor stub
+}
+

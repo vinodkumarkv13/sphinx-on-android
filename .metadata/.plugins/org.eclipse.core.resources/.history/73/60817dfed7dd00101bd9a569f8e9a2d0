@@ -1,0 +1,18 @@
+/*
+ * gqandroidsphinx.cpp
+ *
+ *  Created on: 2011-9-13
+ *      Author: root
+ */
+
+#include "../include/gqandroidsphinx.h"
+
+GqAndroidSphinx::GqAndroidSphinx() {
+	// TODO Auto-generated constructor stub
+
+}
+
+GqAndroidSphinx::~GqAndroidSphinx() {
+	// TODO Auto-generated destructor stub
+}
+

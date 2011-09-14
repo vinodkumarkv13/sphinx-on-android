@@ -1,0 +1,19 @@
+/*
+ * gpslrecorder.h
+ *
+ *  Created on: 2011-9-7
+ *      Author: root
+ */
+
+#ifndef GPSLRECORDER_H_
+#define GPSLRECORDER_H_
+
+#include "gqrecord.h"
+
+class gpslrecorder: public GqRecord {
+public:
+	gpslrecorder();
+	virtual ~gpslrecorder();
+};
+
+#endif /* GPSLRECORDER_H_ */

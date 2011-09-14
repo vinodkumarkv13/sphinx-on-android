@@ -1,0 +1,17 @@
+/*
+ * gqandroidrecordsl.h
+ *
+ *  Created on: 2011-9-8
+ *      Author: root
+ */
+
+#ifndef GQANDROIDRECORDSL_H_
+#define GQANDROIDRECORDSL_H_
+
+class GqAndroidRecordSL {
+public:
+	GqAndroidRecordSL();
+	virtual ~GqAndroidRecordSL();
+};
+
+#endif /* GQANDROIDRECORDSL_H_ */

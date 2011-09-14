@@ -1,0 +1,30 @@
+/*
+ * gqrecord.h
+ *
+ *  Created on: 2011-9-7
+ *      Author: root
+ */
+
+#ifndef GQRECORD_H_
+#define GQRECORD_H_
+
+class GqRecord {
+public:
+	GqRecord();
+	virtual ~GqRecord();
+
+public:
+	bool start_record();
+	bool stop_record();
+
+
+	virtual void received_buf_from_recorder() =0;
+
+
+private:
+	void sl_record_callback(SLAndroidSimpleBufferQueueItf bq, void *context);
+
+
+};
+
+#endif /* GQRECORD_H_ */

@@ -1,0 +1,40 @@
+#Tue Sep 13 16:04:56 CST 2011
+semanticHighlighting.typedef.color=62,159,165
+hoverModifiers=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;\!0;org.eclipse.cdt.ui.ProblemHover;\!0;org.eclipse.cdt.ui.CDocHover;\!0;org.eclipse.cdt.ui.CMacroExpansionHover;\!0;org.eclipse.cdt.ui.CSourceHover;Shift;org.eclipse.cdt.ui.AnnotationHover;\!0;
+nameStyle.constant.suffix=
+nameStyle.cpp.header.wordDelimiter=
+nameStyle.cpp.source.suffix=.cpp
+nameStyle.cpp.header.prefix=
+org.eclipse.cdt.ui.text.templates.custom=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="default multiline comment" enabled\="true" id\="org.eclipse.cdt.ui.text.templates.c.comment" name\="comment">\n/*\n * \n *\n * \n * author ${user} ${date} ${time}\n */\n</template></templates>
+useQuickDiffPrefPage=true
+nameStyle.field.prefix=
+nameStyle.cpp.test.wordDelimiter=
+nameStyle.cpp.header.suffix=.h
+nameStyle.getter.prefix=get
+nameStyle.setter.wordDelimiter=
+useAnnotationsPrefPage=true
+semanticHighlighting.macroSubstitution.color=165,42,42
+nameStyle.field.suffix=
+nameStyle.getter.suffix=
+nameStyle.field.wordDelimiter=
+nameStyle.variable.wordDelimiter=
+spelling_locale_initialized=true
+sourceHoverBackgroundColor=190,223,255
+nameStyle.cpp.source.wordDelimiter=
+semanticHighlighting.macroSubstitution.enabled=true
+nameStyle.getter.wordDelimiter=
+nameStyle.variable.prefix=
+buildConsoleLines=5000
+nameStyle.setter.prefix=set
+hoverModifierMasks=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;0;org.eclipse.cdt.ui.ProblemHover;0;org.eclipse.cdt.ui.CDocHover;0;org.eclipse.cdt.ui.CMacroExpansionHover;0;org.eclipse.cdt.ui.CSourceHover;131072;org.eclipse.cdt.ui.AnnotationHover;0;
+eclipse.preferences.version=1
+content_assist_disabled_computers=org.eclipse.cdt.ui.parserProposalCategory\u0000org.eclipse.cdt.ui.textProposalCategory\u0000
+nameStyle.variable.suffix=
+nameStyle.constant.wordDelimiter=_
+nameStyle.setter.suffix=
+nameStyle.cpp.test.prefix=
+org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+nameStyle.constant.prefix=
+nameStyle.getter.prefixForBoolean=is
+nameStyle.cpp.test.suffix=_test.cpp
+nameStyle.cpp.source.prefix=
