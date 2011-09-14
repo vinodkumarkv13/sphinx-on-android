@@ -1,0 +1,31 @@
+/*
+ * gqrecord.h
+ *
+ *  Created on: 2011-9-7
+ *      Author: root
+ */
+
+#ifndef GQRECORD_H_
+#define GQRECORD_H_
+
+#include <SLES/OpenSLES.h>
+#include <SLES/OpenSLES_Android.h>
+
+class GqRecord {
+public:
+	GqRecord();
+	virtual ~GqRecord();
+
+public:
+	virtual bool start_record() = 0;
+	virtual bool pause_record() = 0;
+	virtual bool stop_record() = 0;
+
+	virtual void received_buf_from_recorder() =0;
+
+
+protected:
+	void sl_record_callback(SLAndroidSimpleBufferQueueItf bq, void *context);
+};
+
+#endif /* GQRECORD_H_ */

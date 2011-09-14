@@ -1,0 +1,18 @@
+/*
+ * gpslrecorder.cpp
+ *
+ *  Created on: 2011-9-7
+ *      Author: root
+ */
+
+#include "gpslrecorder.h"
+
+gpslrecorder::gpslrecorder() {
+	// TODO Auto-generated constructor stub
+
+}
+
+gpslrecorder::~gpslrecorder() {
+	// TODO Auto-generated destructor stub
+}
+
