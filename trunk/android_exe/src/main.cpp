@@ -27,6 +27,8 @@ int main(void) {
 	psphinx->start_recognize_from_mic();
 
 	::usleep(1000000*5);
+	
+	
 
 	std::cout << "main 2" << std::endl;
 	psphinx->end_recognize_from_mic();
