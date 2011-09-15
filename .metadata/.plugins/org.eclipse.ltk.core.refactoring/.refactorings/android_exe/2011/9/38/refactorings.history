@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;android_exe/include/gqrecord.h&apos; to &apos;igqrecord.h&apos;" description="Rename resource &apos;gqrecord.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="include/gqrecord.h" name="igqrecord.h" stamp="1315877792665" updateReferences="true"/>
-</session>
