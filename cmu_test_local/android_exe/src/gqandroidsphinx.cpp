@@ -17,9 +17,9 @@
 //#include <gqrecordsl.h>
 
 GqAndroidSphinx::GqAndroidSphinx() :
-		m_shmm("/data/td/model/hmm/"), m_slm(
-				"/data/td/model/lm/zh_broadcastnews_64000_utf8.DMP"), m_sdict(
-				"/data/td/model/lm/zh_broadcastnews_utf8.dic") {
+		m_shmm("/home/q/Workspace/data/model/hmm/"), m_slm(
+				"/home/q/Workspace/data/model/lm/zh_broadcastnews_64000_utf8.DMP"), m_sdict(
+				"/home/q/Workspace/data/model/lm/zh_broadcastnews_utf8.dic") {
 
 }
 
