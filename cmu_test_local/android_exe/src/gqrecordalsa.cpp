@@ -28,14 +28,14 @@ void *fn_record(void *precord) {
 	assert(precord_alsa != NULL);
 
 	while (true) {
-		snd_pcm_status_t record_status;
-		snd_pcm_status(precord_alsa->m_pcapture_handle, &record_status);
-		_snd_pcm_state state = snd_pcm_status_get_state(&record_status);
+		snd_pcm_state_t  state = snd_pcm_state(precord_alsa->m_pcapture_handle);
 		switch (state) {
 		case SND_PCM_STATE_PAUSED:
 			continue;
 		case SND_PCM_STATE_DISCONNECTED:
 			return NULL;
+		default:
+			break;
 		}
 
 		int err;
@@ -54,7 +54,7 @@ void *fn_record(void *precord) {
 bool GqRecordALSA::start_record() {
 	create_record();
 
-	snd_pcm_hw_params_free (hw_params);
+	snd_pcm_hw_params_free (m_hw_params);
 
 	int err = -1;
 	if ((err = snd_pcm_prepare(m_pcapture_handle)) < 0) {
