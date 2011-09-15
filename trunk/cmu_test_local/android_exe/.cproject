@@ -59,6 +59,10 @@
 									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_local/adsphinxbase/Debug"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_local/adpocketsphinx/Debug"/>
 								</option>
+								<option id="gnu.cpp.link.option.other.1530042844" superClass="gnu.cpp.link.option.other" valueType="stringList">
+									<listOptionValue builtIn="false" value="-R/home/q/Workspace/sphinx-on-android/trunk/cmu_test_local/adsphinxbase/Debug/"/>
+									<listOptionValue builtIn="false" value="-R/home/q/Workspace/sphinx-on-android/trunk/cmu_test_local/adpocketsphinx/Debug/"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.130962106" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>

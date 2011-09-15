@@ -8,9 +8,7 @@
 #include <iomanip>
 #include <unistd.h>
 
-
 #include <pocketsphinx.h>
-
 
 #include <gqandroidsphinx.h>
 #include <gqandroidrecordsl.h>
@@ -26,7 +24,9 @@ int main(void) {
 	std::cout << "main 1.2" << std::endl;
 	psphinx->start_recognize_from_mic();
 
-	::usleep(1000000*5);
+	while (true) {
+		::usleep(1000000 * 5);
+	}
 
 	std::cout << "main 2" << std::endl;
 	psphinx->end_recognize_from_mic();
