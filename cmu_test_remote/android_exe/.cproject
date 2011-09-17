@@ -26,8 +26,8 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1821623902" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.886353727" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.475800581" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/q/Workspace/cmu_test_remote/adsphinxbase/include/"/>
-									<listOptionValue builtIn="false" value="/home/q/Workspace/cmu_test_remote/adpocketsphinx/include/"/>
+									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/"/>
+									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adpocketsphinx/include/"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/include"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/arm-linux-androideabi/include"/>
@@ -42,9 +42,9 @@
 								<option id="gnu.cpp.compiler.option.optimization.level.450529262" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.816281382" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.23285859" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/q/Workspace/cmu_test_remote/android_exe/include"/>
-									<listOptionValue builtIn="false" value="/home/q/Workspace/cmu_test_remote/adsphinxbase/include/"/>
-									<listOptionValue builtIn="false" value="/home/q/Workspace/cmu_test_remote/adpocketsphinx/include/"/>
+									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/android_exe/include/"/>
+									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/"/>
+									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adpocketsphinx/include/"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/include"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/arm-linux-androideabi/include"/>
@@ -61,12 +61,12 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.1661124243" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.746639141" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
-								<option id="gnu.cpp.link.option.flags.1253868940" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="" valueType="string"/>
+								<option id="gnu.cpp.link.option.flags.1253868940" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-pthread" valueType="string"/>
 								<option id="gnu.cpp.link.option.paths.314861111" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/lib"/>
 									<listOptionValue builtIn="false" value="/home/q/Downloads/android_bak/NDK/sources/cxx-stl/stlport/libs/armeabi-v7a"/>
-									<listOptionValue builtIn="false" value="/home/q/Workspace/cmu_test_remote/adsphinxbase/Debug"/>
-									<listOptionValue builtIn="false" value="/home/q/Workspace/cmu_test_remote/adpocketsphinx/Debug"/>
+									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/Debug"/>
+									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adpocketsphinx/Debug"/>
 								</option>
 								<option id="gnu.cpp.link.option.userobjs.2042440747" name="Other objects" superClass="gnu.cpp.link.option.userobjs" valueType="userObjs">
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/lib/crtbegin_dynamic.o"/>
@@ -206,4 +206,5 @@
 	<storageModule moduleId="refreshScope" versionNumber="1">
 		<resource resourceType="PROJECT" workspacePath="/android_exe"/>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
