@@ -1,15 +1,15 @@
 src/libsphinxbase/util/bitvec.d src/libsphinxbase/util/bitvec.o: \
  ../src/libsphinxbase/util/bitvec.c \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/bitvec.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/bitvec.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/string.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
  /home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/malloc.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/ckd_alloc.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/ckd_alloc.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/alloca.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/strings.h \
@@ -29,7 +29,7 @@ src/libsphinxbase/util/bitvec.d src/libsphinxbase/util/bitvec.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/setjmp.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/setjmp.h
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/bitvec.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/bitvec.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/string.h:
 
@@ -41,13 +41,13 @@ src/libsphinxbase/util/bitvec.d src/libsphinxbase/util/bitvec.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/malloc.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/ckd_alloc.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/ckd_alloc.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdlib.h:
 

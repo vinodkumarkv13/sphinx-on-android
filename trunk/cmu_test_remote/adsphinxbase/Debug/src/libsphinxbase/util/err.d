@@ -1,6 +1,6 @@
 src/libsphinxbase/util/err.d src/libsphinxbase/util/err.o: \
  ../src/libsphinxbase/util/err.c \
- /home/q/Workspace/my_test/adsphinxbase/include/config.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/config.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -29,8 +29,8 @@ src/libsphinxbase/util/err.d src/libsphinxbase/util/err.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/time.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -48,7 +48,7 @@ src/libsphinxbase/util/err.d src/libsphinxbase/util/err.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sched.h
 
-/home/q/Workspace/my_test/adsphinxbase/include/config.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/config.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -106,9 +106,9 @@ src/libsphinxbase/util/err.d src/libsphinxbase/util/err.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/pthread.h:
 

@@ -10,13 +10,9 @@ RM := rm -rf
 -include sources.mk
 -include subdir.mk
 -include src/libsphinxbase/util/subdir.mk
--include src/libsphinxbase/util/.libs/subdir.mk
 -include src/libsphinxbase/lm/subdir.mk
--include src/libsphinxbase/lm/.libs/subdir.mk
 -include src/libsphinxbase/feat/subdir.mk
--include src/libsphinxbase/feat/.libs/subdir.mk
 -include src/libsphinxbase/fe/subdir.mk
--include src/libsphinxbase/fe/.libs/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

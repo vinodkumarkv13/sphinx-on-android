@@ -21,8 +21,8 @@ src/libsphinxbase/util/unlimit.d src/libsphinxbase/util/unlimit.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/resource.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm/resource.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/resource.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/unlimit.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/unlimit.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/time.h:
 
@@ -66,6 +66,6 @@ src/libsphinxbase/util/unlimit.d src/libsphinxbase/util/unlimit.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/resource.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/unlimit.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/unlimit.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h:

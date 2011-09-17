@@ -35,7 +35,7 @@ src/libsphinxbase/util/info.d src/libsphinxbase/util/info.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/sysconf.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/capability.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/pathconf.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/info.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/info.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/lib/gcc/arm-linux-androideabi/4.4.3/include/stdarg.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdlib.h \
@@ -43,8 +43,8 @@ src/libsphinxbase/util/info.d src/libsphinxbase/util/info.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/memory.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/assert.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm/errno.h \
@@ -121,7 +121,7 @@ src/libsphinxbase/util/info.d src/libsphinxbase/util/info.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/pathconf.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/info.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/info.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -137,9 +137,9 @@ src/libsphinxbase/util/info.d src/libsphinxbase/util/info.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/assert.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h:
 

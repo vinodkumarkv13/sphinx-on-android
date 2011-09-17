@@ -22,11 +22,7 @@ C_UPPER_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 src/libsphinxbase/util \
-src/libsphinxbase/util/.libs \
 src/libsphinxbase/lm \
-src/libsphinxbase/lm/.libs \
 src/libsphinxbase/feat \
-src/libsphinxbase/feat/.libs \
 src/libsphinxbase/fe \
-src/libsphinxbase/fe/.libs \
 

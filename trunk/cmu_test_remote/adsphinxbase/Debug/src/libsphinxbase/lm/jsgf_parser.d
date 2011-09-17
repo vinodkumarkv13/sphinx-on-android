@@ -19,32 +19,32 @@ src/libsphinxbase/lm/jsgf_parser.d src/libsphinxbase/lm/jsgf_parser.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/string.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/malloc.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/hash_table.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/glist.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/hash_table.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/glist.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/alloca.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/memory.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/ckd_alloc.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/ckd_alloc.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/setjmp.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/setjmp.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
  ../src/libsphinxbase/lm/jsgf_internal.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/fsg_model.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/logmath.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/cmd_ln.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/bitvec.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/listelem_alloc.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/strfuncs.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/jsgf.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/fsg_model.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/logmath.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/cmd_ln.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/bitvec.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/listelem_alloc.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/strfuncs.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/jsgf.h \
  ../src/libsphinxbase/lm/jsgf_parser.h \
  ../src/libsphinxbase/lm/jsgf_scanner.h
 
@@ -86,15 +86,15 @@ src/libsphinxbase/lm/jsgf_parser.d src/libsphinxbase/lm/jsgf_parser.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/malloc.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/hash_table.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/hash_table.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/glist.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/glist.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -104,13 +104,13 @@ src/libsphinxbase/lm/jsgf_parser.d src/libsphinxbase/lm/jsgf_parser.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/memory.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/ckd_alloc.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/ckd_alloc.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/setjmp.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/setjmp.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h:
 
@@ -124,19 +124,19 @@ src/libsphinxbase/lm/jsgf_parser.d src/libsphinxbase/lm/jsgf_parser.o: \
 
 ../src/libsphinxbase/lm/jsgf_internal.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/fsg_model.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/fsg_model.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/logmath.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/logmath.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/cmd_ln.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/cmd_ln.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/bitvec.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/bitvec.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/listelem_alloc.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/listelem_alloc.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/strfuncs.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/strfuncs.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/jsgf.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/jsgf.h:
 
 ../src/libsphinxbase/lm/jsgf_parser.h:
 

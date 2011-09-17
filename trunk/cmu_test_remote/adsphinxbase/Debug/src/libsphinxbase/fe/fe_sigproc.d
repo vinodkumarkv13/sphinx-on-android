@@ -31,18 +31,18 @@ src/libsphinxbase/fe/fe_sigproc.d src/libsphinxbase/fe/fe_sigproc.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/memory.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/assert.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/ckd_alloc.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/ckd_alloc.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/setjmp.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/setjmp.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/byteorder.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/fixpoint.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/fe.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/cmd_ln.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/genrand.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/libutil.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/byteorder.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/fixpoint.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/fe.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/cmd_ln.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/genrand.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/libutil.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/unistd.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/select.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -55,28 +55,28 @@ src/libsphinxbase/fe/fe_sigproc.d src/libsphinxbase/fe/fe_sigproc.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/sysconf.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/capability.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/pathconf.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/bitvec.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/case.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/listelem_alloc.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/bitvec.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/case.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/listelem_alloc.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/filename.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/glist.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/hash_table.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/heap.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/pio.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/filename.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/glist.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/hash_table.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/heap.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/pio.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/stat.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/stat.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/endian.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/endian.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/profile.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/strfuncs.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/unlimit.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/info.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/profile.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/strfuncs.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/unlimit.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/info.h \
  ../src/libsphinxbase/fe/fe_internal.h ../src/libsphinxbase/fe/fe_warp.h
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdio.h:
@@ -141,29 +141,29 @@ src/libsphinxbase/fe/fe_sigproc.d src/libsphinxbase/fe/fe_sigproc.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/assert.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/ckd_alloc.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/ckd_alloc.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/setjmp.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/setjmp.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/byteorder.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/byteorder.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/fixpoint.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/fixpoint.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/fe.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/fe.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/cmd_ln.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/cmd_ln.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/genrand.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/genrand.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/libutil.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/libutil.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/unistd.h:
 
@@ -189,13 +189,13 @@ src/libsphinxbase/fe/fe_sigproc.d src/libsphinxbase/fe/fe_sigproc.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/pathconf.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/bitvec.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/bitvec.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/case.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/case.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/listelem_alloc.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/listelem_alloc.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h:
 
@@ -207,15 +207,15 @@ src/libsphinxbase/fe/fe_sigproc.d src/libsphinxbase/fe/fe_sigproc.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/filename.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/filename.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/glist.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/glist.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/hash_table.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/hash_table.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/heap.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/heap.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/pio.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/pio.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/stat.h:
 
@@ -225,13 +225,13 @@ src/libsphinxbase/fe/fe_sigproc.d src/libsphinxbase/fe/fe_sigproc.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/endian.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/profile.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/profile.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/strfuncs.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/strfuncs.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/unlimit.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/unlimit.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/info.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/info.h:
 
 ../src/libsphinxbase/fe/fe_internal.h:
 
