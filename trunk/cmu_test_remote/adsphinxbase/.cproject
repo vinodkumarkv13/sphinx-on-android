@@ -32,7 +32,8 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.476163988" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1641368719" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1966401988" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/q/Workspace/cmu_test_remote/adsphinxbase/include/"/>
+									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adpocketsphinx/include/"/>
+									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/include"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/arm-linux-androideabi/include"/>
