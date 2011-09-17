@@ -22,11 +22,11 @@ src/libsphinxbase/util/case.d src/libsphinxbase/util/case.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/memory.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/assert.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/case.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/case.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h \
  /home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/lib/gcc/arm-linux-androideabi/4.4.3/include/stdarg.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h \
@@ -79,15 +79,15 @@ src/libsphinxbase/util/case.d src/libsphinxbase/util/case.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/assert.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/case.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/case.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h:
 
 /home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/lib/gcc/arm-linux-androideabi/4.4.3/include/stdarg.h:
 

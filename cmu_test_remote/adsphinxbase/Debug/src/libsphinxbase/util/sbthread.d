@@ -5,10 +5,10 @@ src/libsphinxbase/util/sbthread.d src/libsphinxbase/util/sbthread.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
  /home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/lib/gcc/arm-linux-androideabi/4.4.3/include/stddef.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/malloc.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sbthread.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/cmd_ln.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sbthread.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/cmd_ln.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/_types.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/_types.h \
@@ -23,15 +23,15 @@ src/libsphinxbase/util/sbthread.d src/libsphinxbase/util/sbthread.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/types.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/ckd_alloc.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/ckd_alloc.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/alloca.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/memory.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/setjmp.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/setjmp.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm/errno.h \
@@ -64,13 +64,13 @@ src/libsphinxbase/util/sbthread.d src/libsphinxbase/util/sbthread.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/malloc.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sbthread.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sbthread.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/cmd_ln.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/cmd_ln.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -100,9 +100,9 @@ src/libsphinxbase/util/sbthread.d src/libsphinxbase/util/sbthread.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/ckd_alloc.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/ckd_alloc.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -116,7 +116,7 @@ src/libsphinxbase/util/sbthread.d src/libsphinxbase/util/sbthread.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/setjmp.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h:
 

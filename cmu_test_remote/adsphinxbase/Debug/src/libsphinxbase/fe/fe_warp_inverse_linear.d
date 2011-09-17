@@ -31,20 +31,20 @@ src/libsphinxbase/fe/fe_warp_inverse_linear.d \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/internal_types.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/strfuncs.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/strfuncs.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/linux/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
  ../src/libsphinxbase/fe/fe_warp.h ../src/libsphinxbase/fe/fe_internal.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/fe.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/cmd_ln.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/fixpoint.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/fe.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/cmd_ln.h \
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/fixpoint.h \
  ../src/libsphinxbase/fe/fe_warp_inverse_linear.h
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/stdio.h:
@@ -107,15 +107,15 @@ src/libsphinxbase/fe/fe_warp_inverse_linear.d \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/sys/syslimits.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/strfuncs.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/strfuncs.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinx_config.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinx_config.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/prim_type.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/prim_type.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/sphinxbase_export.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/err.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/err.h:
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/errno.h:
 
@@ -131,10 +131,10 @@ src/libsphinxbase/fe/fe_warp_inverse_linear.d \
 
 ../src/libsphinxbase/fe/fe_internal.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/fe.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/fe.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/cmd_ln.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/cmd_ln.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/fixpoint.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/fixpoint.h:
 
 ../src/libsphinxbase/fe/fe_warp_inverse_linear.h:

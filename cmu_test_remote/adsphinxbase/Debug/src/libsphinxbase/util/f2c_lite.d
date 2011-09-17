@@ -31,7 +31,7 @@ src/libsphinxbase/util/f2c_lite.d src/libsphinxbase/util/f2c_lite.o: \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/memory.h \
  /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/assert.h \
- /home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/f2c.h
+ /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/f2c.h
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/math.h:
 
@@ -95,4 +95,4 @@ src/libsphinxbase/util/f2c_lite.d src/libsphinxbase/util/f2c_lite.o: \
 
 /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include/assert.h:
 
-/home/q/Workspace/my_test/adsphinxbase/include/sphinxbase/f2c.h:
+/home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/include/sphinxbase/f2c.h:
