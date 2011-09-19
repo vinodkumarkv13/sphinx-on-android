@@ -74,6 +74,7 @@ bool GqAndroidSphinx::start_recognize_from_mic() {
 
 bool GqAndroidSphinx::end_recognize_from_mic() {
 	m_precord->stop_record();
+	::usleep(1000000*3);
 	int rv = ps_end_utt(m_pdecoder);
 	if (rv < 0)
 		return false;

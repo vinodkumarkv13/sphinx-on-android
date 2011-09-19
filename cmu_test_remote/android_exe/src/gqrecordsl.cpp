@@ -29,13 +29,16 @@ void sl_record_callback(SLAndroidSimpleBufferQueueItf bq, void *context) {
 	LOGD("enter bqRecorderCallback");
 
 	SLresult result = (*bq)->Enqueue(bq, recorderBuffer,
-			RECORDER_FRAMES * sizeof(short));
+			RECORDER_FRAMES * sizeof(short) );
 
 	assert(SL_RESULT_SUCCESS == result);
 
 	LOGD("exit bqRecorderCallback");
 	IGqRecordCB *precord_cb = lprecord->get_record_cb();
 	assert(NULL != precord_cb && "the IGqRecordCB not set!");
+
+
+
 	precord_cb->received_buf_from_recorder(recorderBuffer,
 			RECORDER_FRAMES * sizeof(short));
 
@@ -82,6 +85,9 @@ bool GqRecordSL::start_record() {
 bool GqRecordSL::stop_record() {
 	SLresult result = (*m_sl_recorder_record)->SetRecordState(
 			m_sl_recorder_record, SL_RECORDSTATE_STOPPED);
+
+	std::cout << "stop_record" << std::endl << std::endl << std::endl << std::endl;
+
 	assert(SL_RESULT_SUCCESS == result);
 	return false;
 }
