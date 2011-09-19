@@ -346,6 +346,12 @@ _E__sys_error(char const *fmt, ...)
 }
 
 void
+_E__sys_debug(char const *fmt, ...)
+{
+
+}
+
+void
 _E__abort_error(char const *fmt, ...)
 {
     va_list pvar;

@@ -93,6 +93,9 @@ void _E__sys_error(char const *fmt, ...);
 SPHINXBASE_EXPORT
 void _E__fatal_sys_error(char const *fmt, ...);
 
+SPHINXBASE_EXPORT
+void _E__sys_debug(char const *fmt, ...);
+
 /**
  * Direct all logging to a given filehandle.
  *
@@ -126,6 +129,7 @@ int err_set_logfile(char const *file);
  */
 #define E_FATAL  _E__pr_header(__FILE__, __LINE__, "FATAL_ERROR"),_E__die_error
 
+#ifdef SPHINX_DEBUG
 /**
  * Print error text; Call perror(""); exit(errno); 
  */
@@ -167,6 +171,21 @@ int err_set_logfile(char const *file);
  * Print error message to standard error stream
  */
 #define E_ERROR	  _E__pr_header(__FILE__, __LINE__, "ERROR"),_E__pr_warn
+
+
+#else
+// alter by gqw remove infos
+#define E_FATAL_SYSTEM	_E__pr_header(__FILE__, __LINE__, "SYSTEM_ERROR"),_E__fatal_sys_error
+#define E_WARN_SYSTEM	_E__sys_debug
+#define E_ERROR_SYSTEM	_E__sys_debug
+#define E_INFO	  _E__sys_debug
+#define E_INFOCONT	  _E__pr_info
+#define E_INFO_NOFN _E__sys_debug
+#define E_WARN	  _E__sys_debug
+#define E_ERROR	  _E__sys_debug
+#endif //__DEBUG__
+
+
 
 /**
  * Set debugging verbosity level.
