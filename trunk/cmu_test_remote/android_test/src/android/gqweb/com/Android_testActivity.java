@@ -1,7 +1,7 @@
 package android.gqweb.com;
 
 import android.app.Activity;
-import android.gqweb.com.jni.TestJniCall;
+import android.gqweb.com.jni.SphinxJniCall;
 import android.os.Bundle;
 
 public class Android_testActivity extends Activity {
@@ -11,7 +11,7 @@ public class Android_testActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        TestJniCall jni = new TestJniCall();
-        jni.callTestFun("gqw"); 
+        SphinxJniCall jni = new SphinxJniCall();
+        //jni.callTestFun("gqw"); 
     }
 }
