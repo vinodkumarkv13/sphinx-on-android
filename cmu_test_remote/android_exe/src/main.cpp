@@ -36,6 +36,10 @@ int main(void) {
 	std::string srecog = psphinx->get_recognized_str();
 	std::cout << srecog << std::endl;
 
+	if (precord) {
+		delete precord;
+	}
+
 	if (psphinx)
 		delete psphinx;
 

@@ -21,7 +21,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.exe.debug.1661844957" name="Debug" parent="cdt.managedbuild.config.gnu.cross.exe.debug">
+				<configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.exe.debug.1661844957" name="Debug" parent="cdt.managedbuild.config.gnu.cross.exe.debug" postbuildStep="cp /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/android_exe/Debug/libandroid_exe.so /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/android_test/libs/armeabi/">
 					<folderInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.1661844957." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.exe.debug.221250302" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.exe.debug">
 							<option id="cdt.managedbuild.option.gnu.cross.prefix.2041773226" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix" value="arm-linux-androideabi-" valueType="string"/>
@@ -66,7 +66,7 @@
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1960458421" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.1661124243" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker">
-								<option defaultValue="true" id="gnu.c.link.option.shared.1572654664" superClass="gnu.c.link.option.shared" valueType="boolean"/>
+								<option defaultValue="true" id="gnu.c.link.option.shared.1572654664" name="Shared (-shared)" superClass="gnu.c.link.option.shared" valueType="boolean"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.746639141" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
 								<option id="gnu.cpp.link.option.flags.1253868940" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-pthread" valueType="string"/>
@@ -95,7 +95,7 @@
 									<listOptionValue builtIn="false" value="-R/home/q/Workspace/cmu_test_remote/adpocketsphinx/Debug"/>
 									<listOptionValue builtIn="false" value="-R/home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/lib"/>
 								</option>
-								<option id="gnu.cpp.link.option.shared.221973614" superClass="gnu.cpp.link.option.shared" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.shared.221973614" name="Shared (-shared)" superClass="gnu.cpp.link.option.shared" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.2104491322" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
