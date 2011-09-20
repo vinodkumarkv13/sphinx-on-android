@@ -5,7 +5,7 @@ import android.gqweb.com.R;
 import android.gqweb.net.jni.SphinxJniCall;
 import android.os.Bundle;
 
-public class Android_testActivity extends Activity {
+public class AndroidSphinxActivity extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
