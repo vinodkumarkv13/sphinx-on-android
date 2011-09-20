@@ -21,7 +21,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.so.debug.991796092" name="Debug" parent="cdt.managedbuild.config.gnu.cross.so.debug" postbuildStep="cp /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/Debug/libadsphinxbase.so /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/android_test/libs/armeabi/">
+				<configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.so.debug.991796092" name="Debug" parent="cdt.managedbuild.config.gnu.cross.so.debug" postbuildStep="cp /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/adsphinxbase/Debug/libadsphinxbase.so /home/q/Workspace/sphinx-on-android/trunk/cmu_test_remote/AndroidSphinx/libs/armeabi/">
 					<folderInfo id="cdt.managedbuild.config.gnu.cross.so.debug.991796092." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.so.debug.1415432094" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.so.debug">
 							<option id="cdt.managedbuild.option.gnu.cross.path.1213141259" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path" value="/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/" valueType="string"/>
@@ -42,7 +42,7 @@
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/sources/cxx-stl/stlport/stlport/"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.nostdinc.596506613" name="Do not search system directories (-nostdinc)" superClass="gnu.c.compiler.option.preprocessor.nostdinc" value="true" valueType="boolean"/>
-								<option id="gnu.c.compiler.option.preprocessor.def.symbols.2121015547" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.2121015547" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.974634461" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1435173248" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
@@ -56,7 +56,7 @@
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/lib/gcc/arm-linux-androideabi/4.4.3/include-fixed/"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/Andriod/NDK/sources/cxx-stl/stlport/stlport/"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.preprocessor.def.935459410" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.935459410" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1000588495" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.99892011" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker">
