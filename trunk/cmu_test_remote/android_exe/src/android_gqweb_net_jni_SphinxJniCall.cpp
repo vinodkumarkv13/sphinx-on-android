@@ -46,6 +46,11 @@ jboolean Java_android_gqweb_net_jni_SphinxJniCall_destroySphinx(JNIEnv *env,
 jstring Java_android_gqweb_net_jni_SphinxJniCall_getSphinxRecognizedStr(
 		JNIEnv *env, jobject jthis) {
 	std::string srecog = g_psphinx->get_recognized_str();
-	return (*env).NewStringUTF(srecog.c_str());
+	char szOut[256];
+	int len = srecog.length();
+	strcpy(szOut,srecog.c_str());
+	LOGD("Java_android_gqweb_net_jni_SphinxJniCall_getSphinxRecognizedStr");
+	LOGD("%s,%d",szOut,len);
+	return (*env).NewStringUTF(szOut);
 }
 
