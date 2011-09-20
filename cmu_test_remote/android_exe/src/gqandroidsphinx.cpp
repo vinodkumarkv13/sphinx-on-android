@@ -90,24 +90,14 @@ std::string GqAndroidSphinx::get_recognized_str() {
 	return ps_get_hyp(m_pdecoder, &score, &uttid);
 }
 
+#include <sstream>
+
 void GqAndroidSphinx::received_buf_from_recorder(short *record_buf,
 		unsigned long buf_size_in_byte) {
-	std::cout << "received_buf_from_recorder begin" << std::endl;
-	for (unsigned long i = 0; i < buf_size_in_byte / sizeof(short); ++i) {
-		std::cout << std::right << std::setw(sizeof(short) * 2) << std::hex
-				<< record_buf[i] << std::setfill('0');
-		if ((i + 1) % 10 == 0) {
-			std::cout << std::endl;
-		} else if ((i + 1) % 10 > 0) {
-			std::cout << ",";
-		}
-	}
-	std::cout << std::endl;
-	std::cout << std::endl;
-	std::cout << std::endl;
-	std::cout << "received_buf_from_recorder end" << std::endl;
+	LOGD("before ps_process_raw");
 
-	ps_process_raw(m_pdecoder, record_buf, buf_size_in_byte, FALSE, FALSE);
+	ps_process_raw(m_pdecoder, record_buf, buf_size_in_byte/2, FALSE, FALSE);
+	LOGD("after ps_process_raw");
 }
 
 void GqAndroidSphinx::destroy_sphinx() {
