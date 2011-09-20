@@ -1,3 +1,5 @@
+#include <android_gqweb_net_jni_SphinxJniCall.h>
+
 #include <stdio.h>
 #include <gqcomm.h>
 
@@ -6,7 +8,7 @@
 #include <gqandroidrecordsl.h>
 #include <igqsphinx.h>
 
-#include <android_gqweb_net_jni_SphinxJniCall.h>
+
 
 IGqSphinx *g_psphinx = NULL;
 IGqRecord *g_precord = NULL;

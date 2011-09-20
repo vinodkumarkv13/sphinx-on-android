@@ -16,10 +16,12 @@
 
 #include <gqrecordsl.h>
 
+#include <gqcomm.h>
+
 GqAndroidSphinx::GqAndroidSphinx() :
 		m_shmm("/data/td/model/hmm/"), m_slm(
 				"/data/td/model/lm/zh_broadcastnews_64000_utf8.DMP"), m_sdict(
-				"/data/td/model/lm/zh_broadcastnews_utf8.dic") {
+				"/data/td/model/lm/zh_broadcastnews_utf8.dic"), m_precord(NULL){
 
 }
 
@@ -35,25 +37,24 @@ bool GqAndroidSphinx::init_sphinx(IGqRecord *precord) {
 	}
 
 	if (m_pdecoder) {
+		LOGD("m_pdecoder");
 		ps_free(m_pdecoder);
 		m_pdecoder = NULL;
 	}
-
 	m_pdecoder = ps_init(m_pconfig);
 	if (m_pdecoder == 0) {
 		return false;
 	}
-
 	if (m_precord) {
+		LOGD("delete m_precord;");
 		m_precord->stop_record();
 		delete m_precord;
 		m_precord = NULL;
 	}
-
 	m_precord = precord;
 	m_precord->set_record_cb(this);
 	m_precord->init_recorder();
-
+	LOGD("after init_recorder");
 	return true;
 }
 
@@ -65,10 +66,12 @@ bool GqAndroidSphinx::init_sphinx(IGqRecord *precord) {
  */
 
 bool GqAndroidSphinx::start_recognize_from_mic() {
+
+	LOGD("before start_recognize_from_mic");
 	int rv = ps_start_utt(m_pdecoder, "ps_start_utt");
 	if (rv < 0)
 		return false;
-
+	LOGD("after start_recognize_from_mic");
 	return m_precord->start_record();
 }
 
