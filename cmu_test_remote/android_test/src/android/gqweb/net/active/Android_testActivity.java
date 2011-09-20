@@ -1,4 +1,4 @@
-package android.gqweb.net;
+package android.gqweb.net.active;
 
 import android.app.Activity;
 import android.gqweb.com.R;

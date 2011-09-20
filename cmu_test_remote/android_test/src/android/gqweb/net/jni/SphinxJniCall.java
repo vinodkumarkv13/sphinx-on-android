@@ -5,6 +5,7 @@ public class SphinxJniCall {
 	public native boolean initSphinx();
 	public native boolean startSphinxRecord();
 	public native boolean stopSphinxRecord();
+	public native String getSphinxRecognizedStr();
 	public native boolean destroySphinx();
 	
 	static {

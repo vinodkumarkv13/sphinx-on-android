@@ -2,4 +2,8 @@
 <resources>
     <string name="hello">Hello World, Android_testActivity!</string>
     <string name="app_name">Android_test</string>
+    <string name="btn_init">Init</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_get_recognized_str">Recognized</string>
 </resources>
