@@ -33,6 +33,11 @@ public class AndroidSphinxActivity extends Activity {
 		txtRecogStr = (TextView) this.findViewById(R.id.recog_out_str);
 		
 		addBtnListenner();
+		btnInit.setVisibility(Button.INVISIBLE);
+		btnStop.setVisibility(Button.INVISIBLE);
+		btnStart.setVisibility(Button.VISIBLE);
+		btnRecogStr.setVisibility(Button.INVISIBLE);
+		sphinxJniCall.initSphinx();
 	}
 	
 	private void addBtnListenner() {
@@ -40,7 +45,8 @@ public class AndroidSphinxActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				System.out.println("btnInit");
-				sphinxJniCall.initSphinx();
+				//sphinxJniCall.initSphinx();
+				
 			}
 		});
 		
@@ -48,7 +54,11 @@ public class AndroidSphinxActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				System.out.println("btnStart");
+				btnStop.setVisibility(Button.VISIBLE);
+				btnStart.setVisibility(Button.INVISIBLE);
+				btnRecogStr.setVisibility(Button.INVISIBLE);
 				sphinxJniCall.startSphinxRecord();
+				
 			}
 		});
 		
@@ -56,6 +66,9 @@ public class AndroidSphinxActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				System.out.println("btnStop");
+				btnStop.setVisibility(Button.INVISIBLE);
+				btnStart.setVisibility(Button.VISIBLE);
+				btnRecogStr.setVisibility(Button.VISIBLE);
 				sphinxJniCall.stopSphinxRecord();
 			}
 		});
@@ -64,7 +77,8 @@ public class AndroidSphinxActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				System.out.println("btnRecogStr");
-				String strRecog = sphinxJniCall.getSphinxRecognizedStr();
+				String strRecog = "strRecog:";
+				strRecog += sphinxJniCall.getSphinxRecognizedStr();
 				txtRecogStr.setText(strRecog);
 			}
 		});

@@ -17,14 +17,16 @@
 //#include <gqrecordsl.h>
 
 GqAndroidSphinx::GqAndroidSphinx() :
-		m_shmm("/home/q/Workspace/sphinx-on-android/trunk/data/model/hmm/"), m_slm(
+		m_shmm("/home/q/Workspace/sphinx-on-android/trunk/data/model/hmm"), m_slm(
 				"/home/q/Workspace/sphinx-on-android/trunk/data/model/lm/zh_broadcastnews_64000_utf8.DMP"), m_sdict(
 				"/home/q/Workspace/sphinx-on-android/trunk/data/model/lm/zh_broadcastnews_utf8.dic") {
 	pthread_mutex_init(&m_pt_mutex,NULL);
+	m_fout.open("sphinx_record.raw",std::ios::out|std::ios::binary|std::ios::trunc);
 }
 
 GqAndroidSphinx::~GqAndroidSphinx() {
 	destroy_sphinx();
+	m_fout.close();
 }
 
 bool GqAndroidSphinx::init_sphinx(IGqRecord *precoder) {
@@ -65,11 +67,11 @@ bool GqAndroidSphinx::init_sphinx(IGqRecord *precoder) {
  */
 
 bool GqAndroidSphinx::start_recognize_from_mic() {
-	int rv = ps_start_utt(m_pdecoder, "ps_start_utt");
+	int rv = ps_start_utt(m_pdecoder, NULL);
 	if (rv < 0)
 		return false;
 
-	return m_precord->start_record();;
+	return m_precord->start_record();
 }
 
 bool GqAndroidSphinx::end_recognize_from_mic() {
@@ -90,15 +92,7 @@ std::string GqAndroidSphinx::get_recognized_str() {
 
 void GqAndroidSphinx::received_buf_from_recorder(short *record_buf,
 		unsigned long buf_size_in_byte) {
-	for (unsigned long i = 0; i < buf_size_in_byte / sizeof(short); ++i) {
-		std::cout << std::right << std::setw(sizeof(short) * 2) << std::hex
-				<< record_buf[i] << std::setfill('0');
-		if ((i + 1) % 10 == 0) {
-			std::cout << std::endl;
-		} else if ((i + 1) % 10 > 0) {
-			std::cout << ",";
-		}
-	}
+	m_fout.write((char *)record_buf,buf_size_in_byte);
 	pthread_mutex_lock(&m_pt_mutex);
 	ps_process_raw(m_pdecoder, record_buf, buf_size_in_byte/2, FALSE, FALSE);
 	pthread_mutex_unlock(&m_pt_mutex);

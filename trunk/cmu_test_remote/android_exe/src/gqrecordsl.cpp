@@ -26,23 +26,19 @@ void sl_record_callback(SLAndroidSimpleBufferQueueItf bq, void *context) {
 	GqRecordSL* lprecord = (GqRecordSL*) context;
 	assert(bq == lprecord->m_sl_recorder_buf_queue);
 
-	LOGD("enter sl_record_callback");
 
 	SLresult result = (*bq)->Enqueue(bq, recorderBuffer,
 			RECORDER_FRAMES * sizeof(short) );
 
 	assert(SL_RESULT_SUCCESS == result);
 
-	LOGD("before get_record_cb");
 
 	IGqRecordCB *precord_cb = lprecord->get_record_cb();
 	assert(NULL != precord_cb && "the IGqRecordCB not set!");
 
-	LOGD("exit get_record_cb");
 
 	precord_cb->received_buf_from_recorder(recorderBuffer,
 			RECORDER_FRAMES * sizeof(short));
-	LOGD("exit sl_record_callback");
 }
 
 GqRecordSL::GqRecordSL() :

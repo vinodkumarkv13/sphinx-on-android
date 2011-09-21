@@ -13,7 +13,7 @@
 #include <igqsphinx.h>
 #include <igqrecord.h>
 #include <igqrecordcb.h>
-
+#include <fstream>
 
 class GqAndroidSphinx : public IGqSphinx, public IGqRecordCB {
 public:
@@ -43,6 +43,7 @@ private:
 	IGqRecord *m_precord;
 
 	pthread_mutex_t m_pt_mutex;
+	std::fstream m_fout;
 };
 
 #endif /* GQANDROIDSPHINX_H_ */

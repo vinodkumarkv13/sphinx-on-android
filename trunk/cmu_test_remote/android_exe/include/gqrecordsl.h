@@ -13,7 +13,7 @@
 #include <SLES/OpenSLES.h>
 #include <SLES/OpenSLES_Android.h>
 
-#define RECORDER_FRAMES (512 * 5)
+#define RECORDER_FRAMES (512)
 
 
 class GqRecordSL: public IGqRecord {

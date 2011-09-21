@@ -51,7 +51,7 @@
 									<listOptionValue builtIn="false" value="adsphinxbase"/>
 								</option>
 								<option id="gnu.cpp.link.option.paths.639009604" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="/home/q/Workspace/cmu_test_local/adsphinxbase/Debug/"/>
+									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_local/adsphinxbase/Debug"/>
 								</option>
 								<option defaultValue="true" id="gnu.cpp.link.option.shared.1234351280" name="Shared (-shared)" superClass="gnu.cpp.link.option.shared" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.184611924" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
