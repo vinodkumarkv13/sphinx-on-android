@@ -22,7 +22,7 @@ GqAndroidSphinx::GqAndroidSphinx() :
 		m_shmm("/data/td/model/hmm/"), m_slm(
 				"/data/td/model/lm/zh_broadcastnews_64000_utf8.DMP"), m_sdict(
 				"/data/td/model/lm/zh_broadcastnews_utf8.dic"), m_precord(NULL){
-
+	pthread_mutex_init(&m_pt_mutex,NULL);
 }
 
 GqAndroidSphinx::~GqAndroidSphinx() {
@@ -77,8 +77,9 @@ bool GqAndroidSphinx::start_recognize_from_mic() {
 
 bool GqAndroidSphinx::end_recognize_from_mic() {
 	m_precord->stop_record();
-	::usleep(1000000*3);
+	pthread_mutex_lock(&m_pt_mutex);
 	int rv = ps_end_utt(m_pdecoder);
+	pthread_mutex_unlock(&m_pt_mutex);
 	if (rv < 0)
 		return false;
 	return true;
@@ -95,8 +96,9 @@ std::string GqAndroidSphinx::get_recognized_str() {
 void GqAndroidSphinx::received_buf_from_recorder(short *record_buf,
 		unsigned long buf_size_in_byte) {
 	LOGD("before ps_process_raw");
-
+	pthread_mutex_lock(&m_pt_mutex);
 	ps_process_raw(m_pdecoder, record_buf, buf_size_in_byte/2, FALSE, FALSE);
+	pthread_mutex_unlock(&m_pt_mutex);
 	LOGD("after ps_process_raw");
 }
 
