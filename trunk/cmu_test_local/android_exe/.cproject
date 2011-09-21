@@ -30,6 +30,7 @@
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.144427546" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_DEBUG_"/>
+									<listOptionValue builtIn="false" value="_REENTRANT"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.214026370" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.1806234623" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -43,6 +44,7 @@
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1248321950" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_DEBUG_"/>
+									<listOptionValue builtIn="false" value="_REENTRANT"/>
 								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1671924308" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1288515511" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
@@ -59,10 +61,11 @@
 									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_local/adsphinxbase/Debug"/>
 									<listOptionValue builtIn="false" value="/home/q/Workspace/sphinx-on-android/trunk/cmu_test_local/adpocketsphinx/Debug"/>
 								</option>
-								<option id="gnu.cpp.link.option.other.1530042844" superClass="gnu.cpp.link.option.other" valueType="stringList">
+								<option id="gnu.cpp.link.option.other.1530042844" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" valueType="stringList">
 									<listOptionValue builtIn="false" value="-R/home/q/Workspace/sphinx-on-android/trunk/cmu_test_local/adsphinxbase/Debug/"/>
 									<listOptionValue builtIn="false" value="-R/home/q/Workspace/sphinx-on-android/trunk/cmu_test_local/adpocketsphinx/Debug/"/>
 								</option>
+								<option id="gnu.cpp.link.option.flags.1310244920" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-pthread" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.130962106" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>

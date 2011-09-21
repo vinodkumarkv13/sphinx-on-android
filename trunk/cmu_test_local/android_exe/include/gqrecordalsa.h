@@ -30,6 +30,8 @@ private:
 	snd_pcm_t *m_pcapture_handle;
 	snd_pcm_hw_params_t *m_hw_params;
 	bool m_bpause;
+
+	pthread_t m_ptd_record;
 };
 
 #endif /* GQRECORDALSA_H_ */
