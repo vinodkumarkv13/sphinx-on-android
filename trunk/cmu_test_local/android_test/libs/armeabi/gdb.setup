@@ -1,2 +1,0 @@
-set solib-search-path /home/q/Workspace/my_test/android_test/obj/local/armeabi
-directory /home/q/Workspace/Andriod/NDK/platforms/android-9/arch-arm/usr/include /home/q/Workspace/my_test/android_test/jni/include /home/q/Workspace/Andriod/NDK/sources/cxx-stl/system/include
