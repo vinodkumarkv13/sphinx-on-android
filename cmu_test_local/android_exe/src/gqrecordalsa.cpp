@@ -16,7 +16,7 @@ GqRecordALSA::GqRecordALSA() :
 }
 
 GqRecordALSA::~GqRecordALSA() {
-
+	snd_pcm_close(m_pcapture_handle);
 }
 
 bool GqRecordALSA::init_recorder() {
@@ -28,25 +28,44 @@ void *fn_record(void *precord) {
 	assert(precord_alsa != NULL);
 
 	while (true) {
-		snd_pcm_state_t  state = snd_pcm_state(precord_alsa->m_pcapture_handle);
+		int err;
+		snd_pcm_state_t state = snd_pcm_state(precord_alsa->m_pcapture_handle);
 		switch (state) {
-		case SND_PCM_STATE_PAUSED:
-			continue;
-		case SND_PCM_STATE_DISCONNECTED:
+		case SND_PCM_STATE_SETUP:
+		case SND_PCM_STATE_DRAINING: { //stop
+			pthread_exit(0);
 			return NULL;
+		}
+		case SND_PCM_STATE_PAUSED: { //pause
+			continue;
+		}
+		case SND_PCM_STATE_RUNNING:
+		case SND_PCM_STATE_PREPARED: {
+			short buf[512] = { 0 };
+			if ((err = snd_pcm_readi(precord_alsa->m_pcapture_handle, buf, 512))
+					< 0) {
+				continue;
+				return NULL;
+			}
+			precord_alsa->get_record_cb()->received_buf_from_recorder(buf,
+					512 * sizeof(short));
+			break;
+		}
+		case SND_PCM_STATE_XRUN: {
+			if ((err = snd_pcm_prepare(precord_alsa->m_pcapture_handle)) < 0) {
+				fprintf(stderr, "cannot prepare audio interface for use (%s)\n",
+						snd_strerror(err));
+				pthread_exit(0);
+			}
+			break;
+		}
+		case SND_PCM_STATE_DISCONNECTED: { //hardware stop
+			return NULL;
+		}
 		default:
 			break;
 		}
 
-		int err;
-		short buf[512] = { 0 };
-		if ((err = snd_pcm_readi(precord_alsa->m_pcapture_handle, buf, 512))
-				< 0) {
-			fprintf(stderr, "read from audio interface failed (%s)\n",
-					snd_strerror(err));
-			return NULL;
-		}
-		precord_alsa->get_record_cb()->received_buf_from_recorder(buf,512*sizeof(short));
 	}
 	return NULL;
 }
@@ -54,7 +73,7 @@ void *fn_record(void *precord) {
 bool GqRecordALSA::start_record() {
 	create_record();
 
-	snd_pcm_hw_params_free (m_hw_params);
+	snd_pcm_hw_params_free(m_hw_params);
 
 	int err = -1;
 	if ((err = snd_pcm_prepare(m_pcapture_handle)) < 0) {
@@ -63,8 +82,8 @@ bool GqRecordALSA::start_record() {
 		exit(1);
 	}
 
-	pthread_t ntid;
-	pthread_create(&ntid, NULL, fn_record, this);
+	pthread_create(&m_ptd_record, NULL, fn_record, this);
+
 	return true;
 }
 
@@ -75,7 +94,13 @@ bool GqRecordALSA::pause_record() {
 }
 
 bool GqRecordALSA::stop_record() {
-	snd_pcm_close(m_pcapture_handle);
+
+	snd_pcm_drop(m_pcapture_handle);
+	void *td_ret = NULL;
+	pthread_join(m_ptd_record, &td_ret);
+
+	//::usleep(5 * 1000000);
+	//pthread_join(m_ptd_record, &td_ret);
 	return true;
 }
 

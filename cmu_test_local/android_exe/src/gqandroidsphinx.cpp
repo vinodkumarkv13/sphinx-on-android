@@ -17,10 +17,10 @@
 //#include <gqrecordsl.h>
 
 GqAndroidSphinx::GqAndroidSphinx() :
-		m_shmm("/home/q/Workspace/data/model/hmm/"), m_slm(
-				"/home/q/Workspace/data/model/lm/zh_broadcastnews_64000_utf8.DMP"), m_sdict(
-				"/home/q/Workspace/data/model/lm/zh_broadcastnews_utf8.dic") {
-
+		m_shmm("/home/q/Workspace/sphinx-on-android/trunk/data/model/hmm/"), m_slm(
+				"/home/q/Workspace/sphinx-on-android/trunk/data/model/lm/zh_broadcastnews_64000_utf8.DMP"), m_sdict(
+				"/home/q/Workspace/sphinx-on-android/trunk/data/model/lm/zh_broadcastnews_utf8.dic") {
+	pthread_mutex_init(&m_pt_mutex,NULL);
 }
 
 GqAndroidSphinx::~GqAndroidSphinx() {
@@ -74,7 +74,9 @@ bool GqAndroidSphinx::start_recognize_from_mic() {
 
 bool GqAndroidSphinx::end_recognize_from_mic() {
 	m_precord->stop_record();
+	pthread_mutex_lock(&m_pt_mutex);
 	int rv = ps_end_utt(m_pdecoder);
+	pthread_mutex_unlock(&m_pt_mutex);
 	if (rv < 0)
 		return false;
 	return true;
@@ -88,7 +90,6 @@ std::string GqAndroidSphinx::get_recognized_str() {
 
 void GqAndroidSphinx::received_buf_from_recorder(short *record_buf,
 		unsigned long buf_size_in_byte) {
-	std::cout << "received_buf_from_recorder begin" << std::endl;
 	for (unsigned long i = 0; i < buf_size_in_byte / sizeof(short); ++i) {
 		std::cout << std::right << std::setw(sizeof(short) * 2) << std::hex
 				<< record_buf[i] << std::setfill('0');
@@ -98,12 +99,9 @@ void GqAndroidSphinx::received_buf_from_recorder(short *record_buf,
 			std::cout << ",";
 		}
 	}
-	std::cout << std::endl;
-	std::cout << std::endl;
-	std::cout << std::endl;
-	std::cout << "received_buf_from_recorder end" << std::endl;
-
-	ps_process_raw(m_pdecoder, record_buf, buf_size_in_byte, FALSE, FALSE);
+	pthread_mutex_lock(&m_pt_mutex);
+	ps_process_raw(m_pdecoder, record_buf, buf_size_in_byte/2, FALSE, FALSE);
+	pthread_mutex_unlock(&m_pt_mutex);
 }
 
 void GqAndroidSphinx::destroy_sphinx() {

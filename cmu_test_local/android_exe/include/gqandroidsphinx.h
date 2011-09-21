@@ -41,6 +41,8 @@ private:
 	std::string m_srecognized;
 
 	IGqRecord *m_precord;
+
+	pthread_mutex_t m_pt_mutex;
 };
 
 #endif /* GQANDROIDSPHINX_H_ */
