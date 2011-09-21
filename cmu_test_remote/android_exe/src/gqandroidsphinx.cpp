@@ -7,6 +7,7 @@
 
 #include <gqandroidsphinx.h>
 
+#include <sstream>
 #include <iostream>
 #include <iomanip>
 #include <unistd.h>
@@ -21,8 +22,8 @@
 GqAndroidSphinx::GqAndroidSphinx() :
 		m_shmm("/data/td/model/hmm/"), m_slm(
 				"/data/td/model/lm/zh_broadcastnews_64000_utf8.DMP"), m_sdict(
-				"/data/td/model/lm/zh_broadcastnews_utf8.dic"), m_precord(NULL){
-	pthread_mutex_init(&m_pt_mutex,NULL);
+				"/data/td/model/lm/zh_broadcastnews_utf8.dic"), m_precord(NULL) {
+	pthread_mutex_init(&m_pt_mutex, NULL);
 }
 
 GqAndroidSphinx::~GqAndroidSphinx() {
@@ -70,8 +71,7 @@ bool GqAndroidSphinx::start_recognize_from_mic() {
 	LOGD("before start_recognize_from_mic");
 	int rv = ps_start_utt(m_pdecoder, "ps_start_utt");
 	if (rv < 0)
-		return false;
-	LOGD("after start_recognize_from_mic");
+		return false;LOGD("after start_recognize_from_mic");
 	return m_precord->start_record();
 }
 
@@ -91,15 +91,26 @@ std::string GqAndroidSphinx::get_recognized_str() {
 	return ps_get_hyp(m_pdecoder, &score, &uttid);
 }
 
-#include <sstream>
-
 void GqAndroidSphinx::received_buf_from_recorder(short *record_buf,
 		unsigned long buf_size_in_byte) {
-	LOGD("before ps_process_raw");
+	std::stringstream ssout;
+	for (unsigned long i = 0; i < buf_size_in_byte / sizeof(short); ++i) {
+		ssout << std::right << std::setw(sizeof(short) * 2) << std::hex
+				<< record_buf[i] << std::setfill('0');
+		if ((i + 1) % 10 == 0) {
+			ssout << std::endl;
+		} else if ((i + 1) % 10 > 0) {
+			ssout << ",";
+		}
+	}
+	std::string sout;
+	ssout >> sout;
+	LOGD(" %s :start ps_process_raw", sout.c_str());
+
 	pthread_mutex_lock(&m_pt_mutex);
-	ps_process_raw(m_pdecoder, record_buf, buf_size_in_byte/2, FALSE, FALSE);
+	ps_process_raw(m_pdecoder, record_buf, buf_size_in_byte / sizeof(int16),
+			FALSE, FALSE);
 	pthread_mutex_unlock(&m_pt_mutex);
-	LOGD("after ps_process_raw");
 }
 
 void GqAndroidSphinx::destroy_sphinx() {

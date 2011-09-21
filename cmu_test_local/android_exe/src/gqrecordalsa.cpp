@@ -10,6 +10,8 @@
 #include <stdio.h>
 #include <pthread.h>
 
+#define ALSA_FRAMES 44100
+
 GqRecordALSA::GqRecordALSA() :
 		m_pcapture_handle(NULL), m_hw_params(NULL), m_bpause(false) {
 
@@ -41,14 +43,14 @@ void *fn_record(void *precord) {
 		}
 		case SND_PCM_STATE_RUNNING:
 		case SND_PCM_STATE_PREPARED: {
-			short buf[512] = { 0 };
-			if ((err = snd_pcm_readi(precord_alsa->m_pcapture_handle, buf, 512))
+			short buf[ALSA_FRAMES] = { 0 };
+			if ((err = snd_pcm_readi(precord_alsa->m_pcapture_handle, buf, ALSA_FRAMES))
 					< 0) {
 				continue;
 				return NULL;
 			}
 			precord_alsa->get_record_cb()->received_buf_from_recorder(buf,
-					512 * sizeof(short));
+					ALSA_FRAMES * sizeof(short));
 			break;
 		}
 		case SND_PCM_STATE_XRUN: {
