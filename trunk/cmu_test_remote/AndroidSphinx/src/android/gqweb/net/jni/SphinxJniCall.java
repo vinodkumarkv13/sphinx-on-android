@@ -1,6 +1,16 @@
 package android.gqweb.net.jni;
 
+
+
 public class SphinxJniCall {
+	private boolean bInit = false;
+	
+	public boolean isbInit() {
+		return bInit;
+	}
+	public void setbInit(boolean bInit) {
+		this.bInit = bInit;
+	}
 	//public native String callTestFun(String name); 
 	public native boolean initSphinx();
 	public native boolean startSphinxRecord();

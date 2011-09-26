@@ -3,35 +3,42 @@
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
 	android:weightSum="1" android:orientation="vertical">
 
-	<LinearLayout android:layout_height="wrap_content"
-		android:id="@+id/linearLayout1" android:layout_width="match_parent"
+	<LinearLayout android:id="@+id/l_btn_1"
+		android:layout_height="wrap_content" android:layout_width="match_parent"
 		android:layout_weight="0.09">
-		<Button android:layout_width="wrap_content" android:id="@+id/btnInit"
-			android:text="@string/btn_init" android:layout_weight="0.98"
-			android:layout_height="118dp"></Button>
-		<Button android:layout_width="wrap_content" android:id="@+id/btnStart"
-			android:text="@string/btn_start" android:layout_weight="0.96"
-			android:layout_height="118dp"></Button>
+		<Button android:layout_height="118dp" android:layout_width="wrap_content"
+			android:id="@+id/btnInit" android:text="@string/btn_init"
+			android:layout_weight="0.98"></Button>
+		<Button android:layout_height="118dp" android:layout_width="wrap_content"
+			android:id="@+id/btnStart" android:text="@string/btn_start"
+			android:layout_weight="0.96"></Button>
 	</LinearLayout>
-	<LinearLayout android:layout_height="wrap_content"
-		android:id="@+id/linearLayout1" android:layout_width="match_parent"
+	<LinearLayout android:id="@+id/l_btn_2"
+		android:layout_height="wrap_content" android:layout_width="match_parent"
 		android:layout_weight="0.09">
-		<Button android:layout_width="wrap_content" android:id="@+id/btnStop"
-			android:text="@string/btn_stop" android:layout_height="110dp"
+		<Button android:layout_height="118dp" android:layout_width="wrap_content"
+			android:id="@+id/btnStop" android:text="@string/btn_stop"
 			android:layout_weight="0.08"></Button>
 		<Button android:id="@+id/btnRecogStr" android:text="@string/btn_get_recognized_str"
-			android:layout_width="159dp" android:layout_height="109dp"
+			android:layout_height="118dp" android:layout_width="wrap_content"
 			android:layout_weight="0.00"></Button>
 	</LinearLayout>
+	<LinearLayout android:id="@+id/l_txt_1"
+		android:layout_height="wrap_content" android:layout_width="match_parent"
+		android:layout_weight="0.09">
+		<TextView android:layout_height="54dp" android:layout_width="wrap_content"
+			android:text="@string/hello" android:id="@+id/recog_out_str" />
+	</LinearLayout>
 
-	<TextView android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:text="@string/hello"
-		android:layout_weight="0.09" android:id="@+id/recog_out_str" />
-	<ScrollView android:id="@+id/scrollView1" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="0.09">
-		<LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="match_parent"></LinearLayout>
-		<TextView android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:layout_weight="0.09"
-		android:id="@+id/debug_str" />
-	</ScrollView>
-	
+	<LinearLayout android:id="@+id/l_txt_2"
+		android:layout_height="wrap_content" android:layout_width="match_parent">
+		<ScrollView android:id="@+id/scrollView1"
+			android:layout_height="match_parent" android:layout_width="match_parent"
+			android:layout_weight="0.09">
+			<TextView android:layout_height="300dp"
+				android:layout_width="match_parent" android:layout_weight="0.09"
+				android:id="@+id/debug_str" />
+		</ScrollView>
+	</LinearLayout>
+
 </LinearLayout>
