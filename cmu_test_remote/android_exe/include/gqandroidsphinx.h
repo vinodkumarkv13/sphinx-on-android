@@ -9,6 +9,7 @@
 #define GQANDROIDSPHINX_H_
 
 #include <string>
+#include <fstream>
 
 #include <igqsphinx.h>
 #include <igqrecord.h>
@@ -43,6 +44,8 @@ private:
 	IGqRecord *m_precord;
 
 	pthread_mutex_t m_pt_mutex;
+
+	std::fstream m_fout;
 };
 
 #endif /* GQANDROIDSPHINX_H_ */

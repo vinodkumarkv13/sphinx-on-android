@@ -19,6 +19,7 @@
 
 #include <gqcomm.h>
 
+#define RECORDER_FRAMES 1600
 static short recorderBuffer[RECORDER_FRAMES];
 
 void sl_record_callback(SLAndroidSimpleBufferQueueItf bq, void *context) {
@@ -26,16 +27,13 @@ void sl_record_callback(SLAndroidSimpleBufferQueueItf bq, void *context) {
 	GqRecordSL* lprecord = (GqRecordSL*) context;
 	assert(bq == lprecord->m_sl_recorder_buf_queue);
 
-
 	SLresult result = (*bq)->Enqueue(bq, recorderBuffer,
-			RECORDER_FRAMES * sizeof(short) );
+			RECORDER_FRAMES * sizeof(short));
 
 	assert(SL_RESULT_SUCCESS == result);
 
-
 	IGqRecordCB *precord_cb = lprecord->get_record_cb();
 	assert(NULL != precord_cb && "the IGqRecordCB not set!");
-
 
 	precord_cb->received_buf_from_recorder(recorderBuffer,
 			RECORDER_FRAMES * sizeof(short));
@@ -83,7 +81,8 @@ bool GqRecordSL::stop_record() {
 	SLresult result = (*m_sl_recorder_record)->SetRecordState(
 			m_sl_recorder_record, SL_RECORDSTATE_STOPPED);
 
-	std::cout << "stop_record" << std::endl << std::endl << std::endl << std::endl;
+	std::cout << "stop_record" << std::endl << std::endl << std::endl
+			<< std::endl;
 
 	assert(SL_RESULT_SUCCESS == result);
 	return false;
@@ -109,9 +108,11 @@ bool GqRecordSL::init_recorder() {
 
 bool GqRecordSL::create_sl_engine() {
 	SLresult result;
-
+	SLEngineOption engineOption[] = { { (SLuint32) SL_ENGINEOPTION_THREADSAFE,
+			(SLuint32) SL_BOOLEAN_TRUE } };
 	// create engine
-	result = slCreateEngine(&m_sl_engine_object, 0, NULL, 0, NULL, NULL);
+	result = slCreateEngine(&m_sl_engine_object, 1, engineOption, 0, NULL,
+			NULL);
 	assert(SL_RESULT_SUCCESS == result);
 
 	// realize the engine
@@ -130,14 +131,59 @@ bool GqRecordSL::create_sl_engine() {
 bool GqRecordSL::create_sl_recorder() {
 	SLresult result;
 
+	/*LOGD("rGetInterface AudioIODeviceCapabilitiesItf");
+	SLAudioIODeviceCapabilitiesItf AudioIODeviceCapabilitiesItf;
+	result = (*m_sl_engine_object)->GetInterface(m_sl_engine_object,
+			SL_IID_AUDIOIODEVICECAPABILITIES, &AudioIODeviceCapabilitiesItf);
+	//assert(SL_RESULT_SUCCESS == result);
+
+	SLuint32 InputDeviceIDs[20];
+	SLint32 numInputs = 0;
+
+	LOGD("GetAvailableAudioInputs");
+	result = (*AudioIODeviceCapabilitiesItf)->GetAvailableAudioInputs(
+			AudioIODeviceCapabilitiesItf, &numInputs, InputDeviceIDs);
+	assert(SL_RESULT_SUCCESS == result);
+
+	SLAudioInputDescriptor AudioInputDescriptor;
+	SLuint32 mic_deviceID = 0;
+	SLboolean mic_available = SL_BOOLEAN_FALSE;
+
+	for (int i = 0; i < numInputs; i++) {
+		LOGD("AudioInputDescriptor :%d", i);
+		result = (*AudioIODeviceCapabilitiesItf)->QueryAudioInputCapabilities(
+				AudioIODeviceCapabilitiesItf, InputDeviceIDs[i],
+				&AudioInputDescriptor);
+		if ((AudioInputDescriptor.deviceConnection
+				== SL_DEVCONNECTION_ATTACHED_WIRED)
+				&& (AudioInputDescriptor.deviceScope == SL_DEVSCOPE_USER)
+				&& (AudioInputDescriptor.deviceLocation
+						== SL_DEVLOCATION_HEADSET)) {
+			mic_deviceID = InputDeviceIDs[i];
+			mic_available = SL_BOOLEAN_TRUE;
+			//break;
+		} else if ((AudioInputDescriptor.deviceConnection
+				== SL_DEVCONNECTION_INTEGRATED)
+				&& (AudioInputDescriptor.deviceScope == SL_DEVSCOPE_USER)
+				&& (AudioInputDescriptor.deviceLocation
+						== SL_DEVLOCATION_HANDSET)) {
+			mic_deviceID = InputDeviceIDs[i];
+			mic_available = SL_BOOLEAN_TRUE;
+			//break;
+		}
+	}
+
+	if (!mic_available) {
+		 Appropriate error message here
+		exit(1);
+	}*/
+
 	// configure audio source
-	LOGD("configure audio source");
 	SLDataLocator_IODevice loc_dev = { SL_DATALOCATOR_IODEVICE,
 			SL_IODEVICE_AUDIOINPUT, SL_DEFAULTDEVICEID_AUDIOINPUT, NULL };
 	SLDataSource audioSrc = { &loc_dev, NULL };
 
 	// configure audio sink
-	LOGD("configure audio sink");
 	SLDataLocator_AndroidSimpleBufferQueue loc_bq = {
 			SL_DATALOCATOR_ANDROIDSIMPLEBUFFERQUEUE, 2 };
 	SLDataFormat_PCM format_pcm = { SL_DATAFORMAT_PCM, 1, SL_SAMPLINGRATE_16,
@@ -156,6 +202,8 @@ bool GqRecordSL::create_sl_recorder() {
 		LOGD("create audio recorder failed");
 		return false;
 	}
+
+	SLAndroidConfigurationItf playerConfig;
 
 	// realize the audio recorder
 	LOGD("realize the audio recorder");
