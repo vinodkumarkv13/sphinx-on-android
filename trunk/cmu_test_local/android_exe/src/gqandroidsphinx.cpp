@@ -16,10 +16,18 @@
 
 //#include <gqrecordsl.h>
 
+/*GqAndroidSphinx::GqAndroidSphinx() :
+		m_shmm("/home/q/Workspace/CMUSphinx/pocketsphinx/model/hmm/zh/zh_broadcastnews_16k_ptm256_8000/"), m_slm(
+				"/home/q/Workspace/CMUSphinx/pocketsphinx/model/lm/zh_CN/zh_broadcastnews_utf8/zh_broadcastnews_64000_utf8.DMP"), m_sdict(
+				"/home/q/Workspace/CMUSphinx/pocketsphinx/model/lm/zh_CN/zh_broadcastnews_utf8/zh_broadcastnews_utf8.dic") {
+	pthread_mutex_init(&m_pt_mutex,NULL);
+	m_fout.open("sphinx_record.raw",std::ios::out|std::ios::binary|std::ios::trunc);
+}*/
+
 GqAndroidSphinx::GqAndroidSphinx() :
-		m_shmm("/home/q/Workspace/sphinx-on-android/trunk/data/model/hmm"), m_slm(
-				"/home/q/Workspace/sphinx-on-android/trunk/data/model/lm/zh_broadcastnews_64000_utf8.DMP"), m_sdict(
-				"/home/q/Workspace/sphinx-on-android/trunk/data/model/lm/zh_broadcastnews_utf8.dic") {
+		m_shmm("/home/q/Workspace/CMUSphinx/SphinxTrain/an4/hmm/model_parameters/an4.cd_cont_200"), m_slm(
+				"/home/q/Workspace/CMUSphinx/SphinxTrain/an4/hmm/etc/an4.lm.DMP"), m_sdict(
+				"/home/q/Workspace/CMUSphinx/SphinxTrain/an4/hmm/etc/an4.dic") {
 	pthread_mutex_init(&m_pt_mutex,NULL);
 	m_fout.open("sphinx_record.raw",std::ios::out|std::ios::binary|std::ios::trunc);
 }
