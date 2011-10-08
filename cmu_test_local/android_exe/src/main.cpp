@@ -14,9 +14,87 @@
 #include <gqandroidrecordsl.h>
 #include <igqsphinx.h>
 #include <gqrecordalsa.h>
-//local
 
-int main(void) {
+#define MODELDIR "/home/q/Workspace/CMUSphinx/SphinxTrain/an4"
+//local
+int recog_from_file();
+void recog_from_mic();
+
+int main(int argc, char *argv[]) {
+	int n_which = atoi(argv[1]);
+
+	//std::cout << "please input the record method:" << std::endl;
+	//std::cin >> n_which;
+
+	if (n_which > 0) {
+		recog_from_mic();
+	} else {
+		recog_from_file();
+	}
+
+	return 0;
+}
+
+int recog_from_file() {
+	ps_decoder_t *ps;
+	cmd_ln_t *config;
+	FILE *fh;
+	char const *hyp, *uttid;
+	int16 buf[512];
+	int rv;
+	int32 score;
+
+	config = cmd_ln_init(NULL, ps_args(), TRUE, "-hmm",
+			MODELDIR "/hmm/model_parameters/an4.ci_cont/", "-lm",
+			MODELDIR "/hmm/etc/an4.lm.DMP", "-dict",
+			MODELDIR "/hmm/etc/an4.dic", NULL);
+
+	if (NULL == config)
+		return 1;
+	ps = ps_init(config);
+
+	if (NULL == ps)
+		return 1;
+
+	fh = fopen("sphinx_record.raw", "rb");
+	if (fh == NULL) {
+		perror("Failed to open goforward.raw");
+		return 1;
+	}
+
+	/*rv = ps_decode_raw(ps, fh, "goforward", -1);
+	 if (rv < 0)
+	 return 1;
+	 hyp = ps_get_hyp(ps, &score, &uttid);
+	 if (hyp == NULL
+	 )
+	 return 1;
+	 printf("Recognized: %s\n", hyp);*/
+
+	fseek(fh, 0, SEEK_SET);
+	rv = ps_start_utt(ps, "goforward");
+	if (rv < 0)
+		return 1;
+	while (!feof(fh)) {
+		size_t nsamp;
+		nsamp = fread(buf, 2, 512, fh);
+		rv = ps_process_raw(ps, buf, nsamp, FALSE, FALSE);
+	}
+	rv = ps_end_utt(ps);
+	if (rv < 0)
+		return 1;
+	hyp = ps_get_hyp(ps, &score, &uttid);
+	if (hyp == NULL
+	)
+		return 1;
+	printf("Recognized: %s\n", hyp);
+
+	fclose(fh);
+	ps_free(ps);
+	return 0;
+}
+
+void recog_from_mic() {
 	IGqSphinx *psphinx = new GqAndroidSphinx;
 	IGqRecord *precord = new GqRecordALSA;
 	std::cout << "main 1" << std::endl;
@@ -40,5 +118,4 @@ int main(void) {
 	if (psphinx)
 		delete psphinx;
 
-	return 0;
 }
