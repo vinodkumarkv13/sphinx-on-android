@@ -6,4 +6,5 @@
     <string name="btn_start">Start</string>
     <string name="btn_stop">Stop</string>
     <string name="btn_get_recognized_str">Recognized</string>
+    <string name="btn_setting">setting</string>
 </resources>
