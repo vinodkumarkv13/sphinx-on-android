@@ -20,15 +20,15 @@
 #include <gqcomm.h>
 
 GqAndroidSphinx::GqAndroidSphinx() :
-		m_shmm("/data/td/model/hmm/"), m_slm(
-				"/data/td/model/lm/gigatdt.5000.DMP"), m_sdict(
-				"/data/td/model/lm/zh_broadcastnews_utf8.dic"), m_precord(NULL) {
+		m_shmm("/sdcard/cmusphinx/zh_CN/model/02/hmm"), m_slm(
+				"/sdcard/cmusphinx/zh_CN/model/02/lm/an4.lm.DMP"), m_sdict(
+				"/sdcard/cmusphinx/zh_CN/model/02/lm/an4.dic"), m_precord(NULL) {
 	pthread_mutex_init(&m_pt_mutex, NULL);
 
 	char szCurDir[256];
 	::getcwd(szCurDir,256);
 	LOGD("%s",szCurDir);
-	m_fout.open("/data/td/sphinx_record.raw",
+	m_fout.open("/sdcard/cmusphinx/zh_CN/model/02/sphinx_record.raw",
 			std::ios::out | std::ios::binary | std::ios::trunc);
 }
 
@@ -87,6 +87,7 @@ bool GqAndroidSphinx::end_recognize_from_mic() {
 	pthread_mutex_lock(&m_pt_mutex);
 	int rv = ps_end_utt(m_pdecoder);
 	pthread_mutex_unlock(&m_pt_mutex);
+	m_fout.close();
 	if (rv < 0)
 		return false;
 	return true;

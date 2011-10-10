@@ -22,6 +22,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager.LayoutParams;
 import android.widget.Button;
+import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 public class AndroidSphinxActivity extends Activity {
@@ -32,6 +33,7 @@ public class AndroidSphinxActivity extends Activity {
 	private Button btnRecogStr;
 	private TextView txtRecogStr;
 	private TextView txtDebugInfo;
+	private ExpandableListView elvHmmPath;
 
 	private String sDebugInfo;
 	
@@ -57,6 +59,8 @@ public class AndroidSphinxActivity extends Activity {
 		btnRecogStr = (Button) this.findViewById(R.id.btnRecogStr);
 		txtRecogStr = (TextView) this.findViewById(R.id.recog_out_str);
 		txtDebugInfo = (TextView) this.findViewById(R.id.debug_str);
+		elvHmmPath = (ExpandableListView) this.findViewById(R.id.elv_hmm_path);
+		
 
 		addBtnListenner();
 		btnInit.setVisibility(Button.INVISIBLE);
