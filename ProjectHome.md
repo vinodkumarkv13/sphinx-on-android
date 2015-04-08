@@ -1,0 +1,1 @@
+应用CMU的Shpinx在Android上实现离线语音识别。
